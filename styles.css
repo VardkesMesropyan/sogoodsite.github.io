@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* Общие стили для всех страниц */
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh; /* Это обеспечивает, чтобы ваш контейнер занимал всю высоту видимой области экрана */
+    flex-direction: column;
+    display: flex;
+
+}
+
+/* Адаптация таблицы под мобильные устройства */
+@media only screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        display: block;
+    }
+
+    td {
+        text-align: left;
+    }
+
+    th {
+        display: none;
+    }
+}
+.container {
+    flex: 1;
+}
+
+.footer text-center py-3{
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+/* Стили для страницы About */
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Анимация появления для элементов страницы */
+.animate__fadeIn {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* styles.css */
+
+/* Стили для страницы Services */
+.services-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Анимация появления для элементов страницы */
+.animate__fadeIn {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* styles.css */
+
+/* Стили для страницы Portfolio */
+.portfolio-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.portfolio-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 15px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Анимация появления для элементов страницы */
+.animate__fadeIn {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Добавленные стили для окрашивания кнопок в черный цвет */
+.carousel-control-prev, .carousel-control-next {
+    color: #000;
+}
